@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBBE40C621E44C6E00E792CF /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE40C521E44C6E00E792CF /* Line.swift */; };
 		CBCEE77F21E12F95000CED12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCEE77E21E12F95000CED12 /* AppDelegate.swift */; };
 		CBCEE78121E12F95000CED12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCEE78021E12F95000CED12 /* ViewController.swift */; };
 		CBCEE78421E12F95000CED12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCEE78221E12F95000CED12 /* Main.storyboard */; };
 		CBCEE78621E12F97000CED12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCEE78521E12F97000CED12 /* Assets.xcassets */; };
 		CBCEE78921E12F97000CED12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCEE78721E12F97000CED12 /* LaunchScreen.storyboard */; };
+		CBCEE79221E138CE000CED12 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCEE79121E138CE000CED12 /* Canvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBBE40C521E44C6E00E792CF /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		CBCEE77B21E12F95000CED12 /* DrawSomething.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawSomething.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCEE77E21E12F95000CED12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCEE78021E12F95000CED12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CBCEE78521E12F97000CED12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBCEE78821E12F97000CED12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBCEE78A21E12F97000CED12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCEE79121E138CE000CED12 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBBE40C421E44C5E00E792CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBBE40C521E44C6E00E792CF /* Line.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CBCEE77221E12F95000CED12 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +66,8 @@
 		CBCEE77D21E12F95000CED12 /* DrawSomething */ = {
 			isa = PBXGroup;
 			children = (
+				CBBE40C421E44C5E00E792CF /* Models */,
+				CBCEE79021E138C2000CED12 /* Views */,
 				CBCEE77E21E12F95000CED12 /* AppDelegate.swift */,
 				CBCEE78021E12F95000CED12 /* ViewController.swift */,
 				CBCEE78221E12F95000CED12 /* Main.storyboard */,
@@ -62,6 +76,14 @@
 				CBCEE78A21E12F97000CED12 /* Info.plist */,
 			);
 			path = DrawSomething;
+			sourceTree = "<group>";
+		};
+		CBCEE79021E138C2000CED12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBCEE79121E138CE000CED12 /* Canvas.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCEE78121E12F95000CED12 /* ViewController.swift in Sources */,
+				CBBE40C621E44C6E00E792CF /* Line.swift in Sources */,
 				CBCEE77F21E12F95000CED12 /* AppDelegate.swift in Sources */,
+				CBCEE79221E138CE000CED12 /* Canvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84ZPW9L46G;
 				INFOPLIST_FILE = DrawSomething/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84ZPW9L46G;
 				INFOPLIST_FILE = DrawSomething/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
